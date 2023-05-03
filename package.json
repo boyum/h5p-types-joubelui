@@ -1,0 +1,25 @@
+{
+  "name": "h5p-types-joubel-ui",
+  "version": "1.0.0",
+  "description": "Types for H5P JoubelUI",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Sindre Bøyum",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/strictest": "^2.0.1",
+    "@types/jquery": "^3.5.16",
+    "h5p-types": "^1.17.0",
+    "prettier": "^2.8.8",
+    "prettier-config": "github:boyum/prettier-config",
+    "type-fest": "^3.9.0",
+    "typescript": "^5.0.4"
+  },
+  "peerDependencies": {
+    "h5p-types": ">= 1.17.0"
+  },
+  "prettier": "prettier-config"
+}
