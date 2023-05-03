@@ -9,6 +9,7 @@ import { JoubelSlider } from "./src/JoubelSlider";
 import { JoubelSpeechBubble } from "./src/JoubelSpeechBubble";
 import { JoubelThrobber } from "./src/JoubelThrobber";
 import { JoubelTip } from "./src/JoubelTip";
+import { SimpleRoundedButton } from "./src/SimpleRoundedButton";
 
 declare module "h5p-types" {
   interface H5PObject extends OriginalH5PObject {
@@ -21,6 +22,7 @@ declare module "h5p-types" {
     JoubelSpeechBubble: typeof JoubelSpeechBubble;
     JoubelThrobber: typeof JoubelThrobber;
     JoubelTip: typeof JoubelTip;
+    SimpleRoundedButton: typeof SimpleRoundedButton;
 
     JoubelUI: {
       createButton: <T extends {}>(
@@ -56,7 +58,7 @@ declare module "h5p-types" {
       ) => JoubelMessageDialog;
 
       /**
-       * Alias of `new H5P.JoubelProgressBar(...)`
+       * Alias of `new H5P.JoubelProgressbar(...)`
        *
        * @param totalNumberOfSteps
        * @param options
@@ -72,7 +74,7 @@ declare module "h5p-types" {
           disableAria?: boolean;
           progressText?: string;
         },
-      ) => JoubelProgressBar;
+      ) => JoubelProgressbar;
 
       /**
        * Alias of `new H5P.JoubelProgressCircle(...)`
@@ -111,7 +113,7 @@ declare module "h5p-types" {
        */
       createSimpleRoundedButton: (
         buttonInnerHtml: string,
-      ) => SimpleRoundedButton;
+      ) => ReturnType<typeof SimpleRoundedButton>;
 
       /**
        * Alias of `new H5P.JoubelSlider(...)`
@@ -147,7 +149,7 @@ declare module "h5p-types" {
           showSpeechBubble?: boolean;
           tabcontrol?: boolean;
         },
-      ) => JoubelTip;
+      ) => ReturnType<typeof JoubelTip>;
     };
   }
 }
