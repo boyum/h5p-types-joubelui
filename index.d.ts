@@ -101,9 +101,9 @@ declare module "h5p-types" {
        */
       createScoreBar: (
         maxScore: number,
-        label: string,
-        helpText: string,
-        buttonLabel: string,
+        label?: string,
+        helpText?: string,
+        buttonLabel?: string,
       ) => JoubelScoreBar;
 
       /**
