@@ -1,5 +1,3 @@
-import { H5PObject as OriginalH5PObject } from "h5p-types";
-
 import { JoubelHelpTextDialog } from "./src/JoubelHelpTextDialog";
 import { JoubelMessageDialog } from "./src/JoubelMessageDialog";
 import { JoubelProgressbar } from "./src/JoubelProgressbar";
@@ -12,7 +10,7 @@ import { JoubelTip } from "./src/JoubelTip";
 import { SimpleRoundedButton } from "./src/SimpleRoundedButton";
 
 declare module "h5p-types" {
-  interface H5PObject extends OriginalH5PObject {
+  interface H5PObject {
     JoubelHelpTextDialog: typeof JoubelHelpTextDialog;
     JoubelMessageDialog: typeof JoubelMessageDialog;
     JoubelProgressbar: typeof JoubelProgressbar;
