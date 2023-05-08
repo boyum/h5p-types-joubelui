@@ -66,7 +66,7 @@ declare module "h5p-types" {
        *          Special options `:num` and `:total` will be replaced with current and total progress.
        *          Default: "Slide :num of :total"
        */
-      createProgessBar: (
+      createProgressBar: (
         totalNumberOfSteps: number,
         options?: {
           disableAria?: boolean;
