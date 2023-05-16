@@ -24,7 +24,7 @@ declare module "h5p-types" {
 
     JoubelUI: {
       createButton: <T extends {}>(
-        params: T & { class?: string },
+        params: T & { class?: string; href?: string; },
       ) => T extends { href: string }
         ? T extends { href: "" }
           ? JQuery<HTMLButtonElement>
